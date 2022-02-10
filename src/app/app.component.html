@@ -1,3 +1,4 @@
+<button (click)="add()">Add more</button>
 <div class="categories" cdkDropListGroup>
   <div *ngFor="let item of items; let i = index">
     <div cdkDragHandle cdkDropList cdkDropListOrientation="horizontal" [cdkDropListData]="{ item: item, index: i }"
